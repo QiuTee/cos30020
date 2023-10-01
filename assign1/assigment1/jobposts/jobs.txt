@@ -1,0 +1,11 @@
+P0110	IT	internet technology	16/06/2023	Part Time	On-going	Post.	NSW
+P4444	CS	computer science	20/06/2023	Full Time	Fixed term	Post.	NT
+P1511	CS	computer science	21/06/2023	Part Time	On-going	Post.	VIC
+P2908	IT web	it developer	23/06/2023	Full Time	Fixed term	Post.	WA
+P2000	IT web	it developer	23/06/2023	Full Time	Fixed term	Post.	WA
+P2001	CS	computer system	23/06/2023	Full Time	Fixed term	Post.	WA
+P0022	BS	Business	30/06/2023	Part Time	On-going	Post.	ACT
+P1310	IT	developer	16/06/2023	Full Time	Fixed term	Mail.	VIC
+P2803	IT wweb	web	16/06/2023	Part Time	On-going	Post.	SA
+P1109	BS core	business	20/07/2023	Full Time	On-going	Post,Mail.	ACT
+P1220	IT	ngg	16/06/2023	Full Time	On-going	Post.	SA
