@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/style.css" rel="stylesheet" type="text/css" />
-    <title>Assignment2</title>
+    <title>Assignment2 - Login</title>
 </head>
 <body>
     <?php
         $page = 'login';
         include('functions/header.php');
     ?>
-        
-        <div class = "login_form">
-            <img src="images/loin.png">
-            <h2>Login From</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-                    <div class = "input-field" >
-                        <input class ="input-form"type="email" name="email" id = "email" placeholder = "Email">
-                        
-                    </div>
-</br>
-                    <div class = "input-field">
-                        <input class ="input-form" type="password" name="password" id = "conf_pass" placeholder ="Password">
-                       
-                    </div>
-</br>
-                   
-                    <input class= "loginBtn" type="submit" value="Register">
-                    <input class= "loginBtn1" type="reset" value="Clear">
-                    <p><a href="index.php">Return HomePage</a></p>
 
-            </form>
-        </div>
-<?php
+    <div class="login-form-container">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post" class="login-form">
+            <img src="images/loin.png" alt="Login Icon" class="login-icon">
+            <h2>Login</h2>
+            
+            <div class="input-group">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            
+            <div class="button-group">
+                <input type="submit" value="Login" class="btn">
+                <input type="reset" value="Clear" class="btn">
+            </div>
+            
+            <p><a href="index.php">Return to HomePage</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
 
 require_once('functions/function.php');
 require_once('functions/settings.php');

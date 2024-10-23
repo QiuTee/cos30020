@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -16,7 +16,7 @@ body{
     min-height: 100vh;
     flex-direction: column;
     background: linear-gradient(to bottom, #00ccff, white);
-    display:flex;
+    display: flex;
     background-image: url('images/anhnen.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,307 +25,350 @@ body{
 }
 
 /* ------header.php-------- */
-nav 
-{
+nav {
     display: flex;
     align-items: center;
     padding-left: 20px;
     height: 10vh;
     /* box-shadow: 0px 0px 17px 2px white; */
     border-radius: 10px;
-    
-}
-nav li{
-   
-    list-style-type: none;
-    display: inline-block;
-    position : relative;
-    left : 30vh;
-    font-weight: bold;
-    
-}
-nav a 
-{
-    padding-left : 65px;
-    text-decoration: none;
-    font-size: 18px;
-    color : white
+
 }
 
-.page a:after
-{
+nav li {
+
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    left: 30vh;
+    font-weight: bold;
+
+}
+
+nav a {
+    padding-left: 65px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white
+}
+
+.page a:after {
     content: "";
-    position: absolute; 
+    position: absolute;
     background-color: #ff7200;
     height: 3px;
     width: 0;
-    left : 8vh;
+    left: 8vh;
     bottom: -10px;
     transition: 0.3s;
 }
-.page a:hover::after{
+
+.page a:hover::after {
     width: 60%;
 }
-.header a
-{
+
+.header a {
     font-size: 25px;
     font-family: 'Expletus Sans', cursive;
-    background : linear-gradient(to right, #ff7200 ,  white);
+    background: linear-gradient(to right, #ff7200, white);
     -webkit-background-clip: text;
-    color : transparent;
+    color: transparent;
 }
 
-.page a:hover 
-{
-   color :  #ff7200;
+.page a:hover {
+    color: #ff7200;
 }
 
 /*----------index.php--------------- */
-.index-all
-{
+.index-all {
 
     text-align: center;
     color: white;
     padding-top: 10vh;
     font-size: 20px;
 }
-.index h2 
-{
+
+.index h2 {
     color: #ff7200;
     font-size: 30px;
 }
-.index a 
-{
+
+.index a {
     text-decoration: none;
     color: white
 }
-.warn 
-{
-    color :rgb(240, 123, 123);
-    font-size : 20px;
+
+.warn {
+    color: rgb(240, 123, 123);
+    font-size: 20px;
     font-weight: bold;
 }
-.link_file a
-{
+
+.link_file a {
     text-decoration: none;
-    color: 		#ffbf00;
+    color: #ffbf00;
     font-weight: bold;
-    display : inline-block;
+    display: inline-block;
     padding-left: 30px;
 
 }
 
 /*----------login.php--------------- */
 
-.login_form 
-{
-    
+
+.login-form-container {
     background: rgba(0, 0, 0, 0.8);
-    padding: 30px 30px 40px;
+    padding: 40px;
     border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    box-shadow:  0px 0px 17px 2px white;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
     margin: 5% auto;
-    color : white;
+    color: white;
 }
-.login_form h2 
-{
+
+.login-form h2 {
     text-align: center;
-    color  : orange;
-    
-}
-.input-field input
-{
-    border-radius: 10px;
-    height: 4vh;
-    width : 30vh;
-    background: #272530;
-    /* color : white; */
-    
-}
-
-.login_form a 
-{
-    text-decoration: none ;
-    padding-left : 35px;
-    color: #ff7200;
-    font-weight : bold ;
-}
-.login_form img {
-    width:70px;
-    margin-left: 10vh;
-    
- }
-
-.loginBtn
-{
-    height: 35px;
-    width: 45%;
-    font-size: 18px;
-    border-radius: 5px;
-    background: #f69f42;
-    cursor: pointer;
-    box-shadow:  0px 0px 3px 2px rgb(238, 114, 5);
-}
-.loginBtn1
-{
-    height: 35px;
-    width: 45%;
-    font-size: 18px;
-    border-radius: 5px;
-    background: #f69f42;
-    cursor: pointer;
-    box-shadow:  0px 0px 3px 2px rgb(238, 114, 5);
-}
-/*----------signup.php--------------- */
-.signup-form
-{
-    max-height: 500vh;
-    background: rgba(0, 0, 0, 0.8);
-    flex-grow: 1;
-    padding: 30px 30px 40px;
-    box-shadow: 0px 0px 17px 2px rgba(131, 114, 102, 0.8);
-    border-radius: 10px;
-    border: 1px solid #000000;
-    /* min-height: 110vh; */
-    max-width: 25vw;
-    align-items: center;
-    justify-content: center;
-    margin: 5% auto;
-    color : white;
-
-}
-.input-field1 input 
-{
-    border-radius: 10px;
-    height: 4vh;
-    width : 30vh;
-    background: #272530;
-    color : white;
-    
-}
-.signup-form h2 
-{
-    text-align: center;
-    color : orange;
-    font-size: 30px;
+    color: orange;
+    font-size: 28px;
     font-weight: bold;
-}
-.signup-form a 
-{
-    text-decoration: none;
-    color: #ff7200;
+    margin-bottom: 20px;
 }
 
-.signup-sb
-{
-    height: 35px;
-    width: 30%;
-    font-size: 18px;
+.login-icon {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #272530;
+    color: white;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #f69f42;
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(246, 159, 66, 0.8);
+    transition: background-color 0.3s;
 }
-.signup-sb:hover
-{
+
+.btn:hover {
     background-color: #ff7200;
 }
-.friend-sys 
-{
+
+.login-form a {
+    display: block;
     text-align: center;
-    color : white;
-    
-}
-.table table 
-{
-    margin-left : 35%;
-    color : white;
-}
-.btn-list a
-{
+    margin-top: 20px;
+    color: #ff7200;
     text-decoration: none;
-    color : white ;
 }
-.btn-list 
-{
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+
+/*----------signup.php--------------- */
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form style */
+.signup-form {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    color: #fff;
+}
+
+.signup-form h2 {
     text-align: center;
-   
+    color: #ff7200;
+    margin-bottom: 20px;
 }
-.friend-sys h3
-{
- font-size: 30px;
- color :rgb(238, 114, 5);
+
+/* Input fields styling */
+.input-group {
+    margin-bottom: 15px;
 }
-.friend-sys p 
-{
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff7200;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Buttons styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff7200;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e66f00;
+}
+
+/* Link styling */
+.signup-form a {
+    color: #ff7200;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}
+
+.friend-sys {
+    text-align: center;
+    color: white;
+
+}
+
+.table table {
+    margin-left: 35%;
+    color: white;
+}
+
+.btn-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-list {
+    text-align: center;
+
+}
+
+.friend-sys h3 {
+    font-size: 30px;
+    color: rgb(238, 114, 5);
+}
+
+.friend-sys p {
     font-size: 20px;
 }
-.content-button 
-{
+
+.content-button {
     height: 35px;
     width: 100%;
     font-size: 18px;
     border-radius: 10px;
     background: #f69f42;
-    
+
 
 }
-.btn-list a 
-{
-    padding-left : 20px;
-    color :rgb(238, 114, 5);
+
+.btn-list a {
+    padding-left: 20px;
+    color: rgb(238, 114, 5);
     font-weight: bold;
 }
-table tr{
-    color : #ffd310;
+
+table tr {
+    color: #ffd310;
     font-weight: bold;
 }
-.alerts 
-{
+
+.alerts {
     background-color: rgba(239, 63, 63, 0.526);
-    padding-left : 10px;
-    color : rgb(246, 7, 7);
+    padding-left: 10px;
+    color: rgb(246, 7, 7);
     font-weight: bold;
 }
+
 /* --------------about.php--------------- */
 
 .about h2 {
-    color : orange;
+    color: orange;
 }
-.about 
-{
+
+.about {
     margin-left: 15px;
-    color : white;
+    color: white;
 }
-.about a 
-{
-    color :rgb(238, 114, 5);
+
+.about a {
+    color: rgb(238, 114, 5);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    padding-left : 10px;
+    padding-left: 10px;
 }
-.about a:hover
-{
+
+.about a:hover {
     text-decoration: underline;
 }
+
 /*---------------pagination---------------*/
-.pagination a
-{
-    color : #ffff99;
+.pagination a {
+    color: #ffff99;
     font-weight: bold;
     text-decoration: none;
-   display: inline-block;
-   padding-left : 25vh;
-   padding-right: 25vh;
+    display: inline-block;
+    padding-left: 25vh;
+    padding-right: 25vh;
 
 }
 
-.pagination
-{
+.pagination {
     text-align: center;
-} 
-.pagination:hover
-{
+}
+
+.pagination:hover {
     text-decoration: underline;
 }

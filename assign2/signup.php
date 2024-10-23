@@ -4,42 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/style.css" rel="stylesheet" type="text/css" />
-    <title>Assignmet2</title>
+    <title>Assignment2 - Sign Up</title>
 </head>
 <body>
     <?php
         $page = 'signup';
         include('functions/header.php');
     ?>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-        <div class = "signup-form">
-            <h2>Sign-Up Form</h2>
-                <div class = "input-field1" >
-                    <label for="email">Email:</label> 
-                    <input type="email" name="email" id = "email">
-                </div>
-                </br>
-                <div class = "input-field1">
-                    <label for="profile_name">Profile Name:</label> 
-                    <input type="text" name="profile_name" id = "profile_name">
-                </div>
-                </br>
-                <div class = "input-field1">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                </br>
-                <div class = "input-field1">
-                    <label for="conf_pass">Confirm Password:</label>
-                    <input type="password" name="conf_pass" id = "conf_pass">
-                </div>
-                </br>
-                <input class= "signup-sb" type="submit" value="Register">
-                <input class = "signup-sb" type="reset" value="Clear">
-                <p><a href="index.php">Return HomePage</a></p>
+    <div class="signup-form-container">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post" class="signup-form">
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <label for="email">Email:</label> 
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="profile_name">Profile Name:</label> 
+                <input type="text" name="profile_name" id="profile_name" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="input-group">
+                <label for="conf_pass">Confirm Password:</label>
+                <input type="password" name="conf_pass" id="conf_pass" required>
+            </div>
+            <div class="button-group">
+                <input class="btn" type="submit" value="Register">
+                <input class="btn" type="reset" value="Clear">
+            </div>
+            <p><a href="index.php">Return to HomePage</a></p>
+        </form>
+    </div>
+</body>
+</html>
 
-        </div>
-    </form>
+
 
     <?php
         $page = 'signup';
